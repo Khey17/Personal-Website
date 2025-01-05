@@ -1,0 +1,5 @@
+Thank you for purchasing the Portfolio kit and scene builder! 
+
+To create your own SVGs to use with the portfolio, visit the URL below and enter your license key!
+
+https://scenekit.vercel.app/

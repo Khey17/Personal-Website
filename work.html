@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Work</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <!-- Add the link to your PNG favicon -->
+  <link rel="icon" href="images/me.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Nunito&family=Sacramento&display=swap" 
+  rel="stylesheet">
+
+  <style>
+
+    #tiles {
+      margin-top: 10px;
+    }
+
+    .matrix {
+      display: flex;
+      justify-content: space-around;
+      row-gap: 50px;
+      flex-wrap: wrap;
+      padding-bottom: 5%;
+    }
+
+    .project-tile {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      background: linear-gradient(#80DBC6, #ffffff);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+
+    .project-tile:hover {
+      transform: scale(1.05);
+    }
+
+    .project-description {
+      width: 400px;
+      padding-left: 5%;
+      padding-bottom: 5%;
+    }
+
+    /* .description {
+      margin-bottom: 0;
+    } */
+
+    .project-image {
+      width: 425px;
+      height: 250px;
+      border-radius: 20px;
+      display: block;
+    }
+
+    .project-head {
+      font-size: 30px;
+      font-family: 'Nunito', sans-serif;
+      margin-top: 10px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .project-tile {
+        background: linear-gradient(#80DBC6, #193A32);
+      }
+    }
+
+  </style>
+
+</head>
+
+<body class="">
+
+<section id="top">
+
+    <header id="home-top" class="nav-top nav-fixed nav-root">
+    
+      <div class="container">
+      
+        <div class="row">
+        
+          <div class="col-md-4 col-xs-4">
+          
+            <div id="header-logo" class="image-text">
+            
+              <a href="index.html">
+                <span class="mask"></span>
+                <span class="behind"></span>
+                Karthikheyaa Kurra
+                <i class=""></i>
+              </a>
+              
+            </div>
+            
+          </div>
+          
+          <div class="col-md-8 col-xs-8">
+          
+            <nav id="top-nav">
+            
+              <ul class="nav-list transistion">
+                <!-- <li><a href="index.html">About</a></li> -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Notes</a></li>
+                <li><a href="work.html">Work</a></li>
+              </ul>
+            </nav>
+          
+          </div> <!-- 12 -->
+        
+        </div> <!-- / row -->
+            
+      </div> <!--/ container -->
+    
+    
+    </header>
+
+</section>
+
+<section id="what-i-do">
+  
+    <div class="container">
+      
+      <div class="row">
+      
+        <div class="col-md-12">
+        
+          <article>
+          
+            <header>
+            
+              <h2>Check out my Work.</h2>
+                
+            </header>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+</section>
+
+<section id="tiles">
+
+  <div class="matrix">
+
+    <div class="project-tile">
+        <img class="project-image" src="https://user-images.githubusercontent.com/90310297/228848430-340caf2d-d8c2-4294-916c-cf6373e81740.png" alt="Project Thumbnail">
+        <div class="project-description">
+            <p class="project-head">Dog Breed Classification</p>
+            <p class="description">Identifying different dog breeds using Machine Learning.</p>
+        </div>
+    </div>
+
+    <div class="project-tile">
+        <img class="project-image" src="https://via.placeholder.com/400x200" alt="Project Thumbnail">
+        <div class="project-description">
+            <p class="project-head">Dog Breed Classification</p>
+            <p class="description">Short project description goes here.</p>
+        </div>
+    </div>
+
+    <div class="project-tile">
+      <img class="project-image" src="https://via.placeholder.com/400x200" alt="Project Thumbnail">
+      <div class="project-description">
+          <p class="project-head">Dog Breed Classification</p>
+          <p class="description">Short project description goes here.</p>
+      </div>
+  </div>
+
+  </div>
+
+  <div class="matrix">
+
+    <div class="project-tile">
+        <img class="project-image" src="https://via.placeholder.com/400x200" alt="Project Thumbnail">
+        <div class="project-description">
+            <p class="project-head">Dog Breed Classification</p>
+            <p class="description"> Short project description goes here.</p>
+        </div>
+    </div>
+
+    <div class="project-tile">
+        <img class="project-image" src="https://via.placeholder.com/400x200" alt="Project Thumbnail">
+        <div class="project-description">
+            <p class="project-head">Dog Breed Classification</p>
+            <p class="description">Short project description goes here.</p>
+        </div>
+    </div>
+
+    <div class="project-tile">
+      <img class="project-image" src="https://via.placeholder.com/400x200" alt="Project Thumbnail">
+      <div class="project-description">
+          <p class="project-head">Dog Breed Classification</p>
+          <p class="description">Short project description goes here.</p>
+      </div>
+  </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <ul class="footer-list">
+
+          <li><a href="https://www.kaggle.com/karthikheyaakurra">Kaggle</a></li>
+          <li><a href="https://github.com/Khey17">Git-hub</a></li>
+          <li><a href="#" class="email-lnk">hire me</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+
+
+        <p>© All rights reserved.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+  
+</body>
+</html>
