@@ -62,9 +62,12 @@ function handleNavClick(event, item) {
 
 function closeMobileNav() {
   const nav = document.querySelector('.nav-links');
-  const toggle = document.querySelector('.nav-toggle');
-  if (nav && toggle) {
+  if (nav) {
     nav.classList.remove('open');
+  }
+
+  const toggle = document.querySelector('.nav-toggle');
+  if (toggle) {
     toggle.setAttribute('aria-expanded', 'false');
   }
 }
