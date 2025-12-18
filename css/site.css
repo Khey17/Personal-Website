@@ -152,11 +152,8 @@ img {
   height: 38px;
   border-radius: 10px;
   background: linear-gradient(145deg, #7c3aed, #22d3ee);
-  display: grid;
-  place-items: center;
-  font-family: var(--font-script);
-  font-size: 22px;
-  color: white;
+  display: block;
+  object-fit: cover;
   box-shadow: 0 14px 30px rgba(34, 211, 238, 0.22);
 }
 
