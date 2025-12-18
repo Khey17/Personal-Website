@@ -51,14 +51,13 @@ function scrollToTarget(target) {
 }
 
 function handleNavClick(event, item) {
-  const onPage = scrollToTarget(item.href);
-  if (onPage) {
-    event.preventDefault();
-    return;
-  }
+  event.preventDefault();
 
-  // If the section isn't on this page (blog/work), take the user to the main page anchor.
-  window.location.href = `index.html${item.href}`;
+  const onPage = scrollToTarget(item.href);
+  if (!onPage) {
+    // If the section isn't on this page (blog/work), take the user to the main page anchor.
+    window.location.href = `index.html${item.href}`;
+  }
 }
 
 function closeMobileNav() {
@@ -79,13 +78,14 @@ function buildNav(activePage) {
   const toggle = document.querySelector('.nav-toggle');
   if (toggle) {
     toggle.setAttribute('aria-expanded', 'false');
-    nav.querySelectorAll('a').forEach((link, index) => {
-      link.addEventListener('click', (event) => {
-        handleNavClick(event, NAV_ITEMS[index]);
-        closeMobileNav();
-      });
-    });
   }
+
+  nav.querySelectorAll('a').forEach((link, index) => {
+    link.addEventListener('click', (event) => {
+      handleNavClick(event, NAV_ITEMS[index]);
+      closeMobileNav();
+    });
+  });
 }
 
 function renderStats() {
