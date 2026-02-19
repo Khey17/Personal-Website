@@ -53,7 +53,7 @@ const SITE_DATA = {
       description: 'Research codebase for numerical PDE solvers and experiments (spectral/HPS-style methods and learning-based components).',
       tags: ['Research', 'Python', 'Scientific Computing', 'PDEs'],
       link: 'https://github.com/Khey17/semilinear-elliptic-PDEs/tree/main',
-      image: 'images/projects/semilinear-pdes.svg',
+      image: 'public/assets/thumbnails/semilinear.svg',
       buttonText: 'View on GitHub'
     }
   ],
@@ -92,6 +92,20 @@ const SITE_DATA = {
       title: 'Debuggability',
       summary: 'Logs, run metadata, and clear failure paths so issues are traceable.',
       icon: '📡'
+    }
+  ],
+  milestones: [
+    {
+      title: 'AWS Certified Machine Learning Engineer – Associate',
+      meta: 'Issued: Dec 17, 2024 · Expires: Dec 17, 2027',
+      linkLabel: 'Verify',
+      link: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/3346c0ac44e14820974f92143c134a2d'
+    },
+    {
+      title: 'TensorFlow Developer Certificate',
+      meta: '',
+      linkLabel: 'Verify',
+      link: 'https://www.credential.net/d08b3cde-7418-4b92-b04f-8671caf0fa93'
     }
   ]
 };

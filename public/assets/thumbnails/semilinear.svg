@@ -1,0 +1,41 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Semilinear Elliptic PDEs thumbnail</title>
+  <desc id="desc">Dark math-themed thumbnail with semilinear PDE equations and subtle contour lines.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#101a2e"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#22314d" stroke-width="1" opacity="0.55"/>
+    </pattern>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+
+  <g fill="none" stroke="#2a3f63" stroke-width="2" opacity="0.7">
+    <path d="M0 640C120 540 240 540 360 640S600 740 720 640 960 540 1200 640"/>
+    <path d="M0 560C120 460 240 460 360 560S600 660 720 560 960 460 1200 560"/>
+    <path d="M0 480C120 380 240 380 360 480S600 580 720 480 960 380 1200 480"/>
+    <path d="M0 400C120 300 240 300 360 400S600 500 720 400 960 300 1200 400"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <text x="94" y="320" font-family="'Times New Roman', Cambria, serif" font-size="72" fill="#e7efff">-Δu + λu + u³ = f</text>
+    <text x="94" y="408" font-family="'Times New Roman', Cambria, serif" font-size="58" fill="#c7d7fb">u|₍∂Ω₎ = 0</text>
+  </g>
+
+  <text x="96" y="132" font-family="Inter, Arial, sans-serif" font-size="34" letter-spacing="3" fill="#8fa7d8">SEMILINEAR ELLIPTIC PDES</text>
+  <text x="96" y="178" font-family="Inter, Arial, sans-serif" font-size="24" fill="#95a8ce">Spectral / HPS methods · numerical experiments</text>
+
+  <rect x="72" y="84" width="1056" height="632" rx="22" ry="22" fill="none" stroke="#2d4368" stroke-width="2" opacity="0.7"/>
+</svg>

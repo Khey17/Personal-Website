@@ -195,7 +195,7 @@ function renderMilestones() {
             <span class="tag">Milestone</span>
           </div>
           <h3 class="card-title">${item.title}</h3>
-          <a class="button secondary" href="${item.link}" target="_blank" rel="noopener">${item.linkLabel || 'Verify'}</a>
+          <a class="button secondary" href="${item.link}" target="_blank" rel="noreferrer">${item.linkLabel || 'Verify'}</a>
         </article>
       `
     )
