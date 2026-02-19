@@ -62,19 +62,19 @@ const SITE_DATA = {
       title: 'Polars vs Pandas: what I’d use and why',
       description: 'A practical comparison of Polars and Pandas for speed, memory, and workflow tradeoffs.',
       link: 'https://medium.com/@karthikheyaa/polars-vs-pandas-5f44051f98bf',
-      date: '2025-01-01'
-    },
-    {
-      title: 'KNN Imputer explained (with intuition + usage)',
-      description: 'How KNN-based imputation works, when it helps, and the pitfalls to watch for.',
-      link: 'https://medium.com/@karthikheyaa/k-nearest-neighbor-knn-imputer-explained-1c56749d0dd7',
-      date: '2025-01-02'
+      date: '2025-02-01'
     },
     {
       title: 'Feature scaling techniques: when to use what',
       description: 'Standardization vs normalization vs robust scaling — what changes and why it matters.',
       link: 'https://medium.com/@karthikheyaa/techniques-of-feature-scaling-75a6aa6e9469',
-      date: '2025-01-03'
+      date: '2023-12-01'
+    },
+    {
+      title: 'KNN Imputer explained (with intuition + usage)',
+      description: 'How KNN-based imputation works, when it helps, and the pitfalls to watch for.',
+      link: 'https://medium.com/@karthikheyaa/k-nearest-neighbor-knn-imputer-explained-1c56749d0dd7',
+      date: '2023-10-01'
     }
   ],
   highlights: [
