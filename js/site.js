@@ -95,7 +95,10 @@ function renderStats() {
   const statRow = document.querySelector('[data-stats]');
   if (!statRow || !Array.isArray(SITE_DATA?.stats)) return;
   statRow.innerHTML = SITE_DATA.stats
-    .map((stat) => `<div class="stat"><div class="section-title">${stat.value}</div><div class="section-subtitle">${stat.label}</div></div>`)
+    .map((stat) => {
+      const valueMarkup = stat.value ? `<div class="section-title">${stat.value}</div>` : '';
+      return `<div class="stat">${valueMarkup}<div class="section-subtitle">${stat.label}</div></div>`;
+    })
     .join('');
 }
 
@@ -150,7 +153,7 @@ function renderProjects(limit) {
           <p class="card-desc">${project.description}</p>
           <div class="card-meta">${buildTags(project.tags)}</div>
           <div class="card-actions">
-            <a class="button secondary" href="${project.link}" target="_blank" rel="noopener">View case study</a>
+            <a class="button secondary" href="${project.link}" target="_blank" rel="noopener">${project.buttonText || 'View case study'}</a>
             <span class="tag">Project</span>
           </div>
         </article>

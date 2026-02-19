@@ -1,0 +1,11 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+<title id="t">Semilinear Elliptic PDEs icon</title><desc id="d">Math grid and wave lines for research project.</desc>
+<rect width="1200" height="800" fill="#1F2937"/>
+<g stroke="#374151" stroke-width="2">
+  <path d="M120 180H1080M120 260H1080M120 340H1080M120 420H1080M120 500H1080M120 580H1080"/>
+  <path d="M200 120V680M320 120V680M440 120V680M560 120V680M680 120V680M800 120V680M920 120V680"/>
+</g>
+<path d="M160 470C260 360 360 360 460 470S660 580 760 470 960 360 1040 430" fill="none" stroke="#F59E0B" stroke-width="14"/>
+<text x="600" y="130" text-anchor="middle" font-size="50" font-family="Inter, Arial" fill="#F3F4F6">Semilinear Elliptic PDEs</text>
+<text x="600" y="190" text-anchor="middle" font-size="30" font-family="Inter, Arial" fill="#D1D5DB">Research & Numerical Methods</text>
+</svg>
