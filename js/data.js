@@ -1,14 +1,13 @@
 const SITE_DATA = {
   links: {
     github: 'https://github.com/Karthikheyaa',
-    kaggle: 'https://www.kaggle.com/karthikheyaa',
+    linkedin: 'https://www.linkedin.com/in/karthikheyaa',
     email: 'mailto:karthikheyaa@gmail.com'
   },
   stats: [
-    { label: 'Years solving data problems', value: '5+' },
-    { label: 'Models in production', value: '18' },
-    { label: 'Mentored analysts', value: '12' },
-    { label: 'Datasets explored', value: '140+' }
+    { label: 'Years solving data problems', value: '3+' },
+    { label: 'Active projects', value: '3' },
+    { label: 'Mentored students', value: '60+' }
   ],
   skills: [
     {
@@ -37,8 +36,8 @@ const SITE_DATA = {
       title: 'Dog Breed Image Classifier',
       description: 'Fine-tuned EfficientNet on 120+ breeds, adding interpretability overlays and drift monitoring to keep deployments healthy.',
       tags: ['Computer Vision', 'TensorFlow', 'MLOps'],
-      link: 'https://www.kaggle.com/code/karthikheyaa/dog-breed-classification',
-      image: 'images/Screenshot 2024-03-25 182452.png'
+      link: 'https://github.com/Khey17/DogBreed-Iden',
+      image: 'images/projects/dog-breed.svg'
     },
     {
       title: 'Churn Early-Warning System',
@@ -95,9 +94,9 @@ const SITE_DATA = {
       icon: '🛡️'
     },
     {
-      title: 'Building data culture',
-      summary: 'Introduced weekly readouts and playbooks that helped product squads adopt experiment-first thinking.',
-      icon: '📘'
+      title: 'Led ML workshops and mentored 60+ students',
+      summary: 'Guided learners through live coding, hands-on projects, and practical write-ups.',
+      icon: '🎓'
     },
     {
       title: 'Operationalizing monitoring',
