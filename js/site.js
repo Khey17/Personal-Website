@@ -95,7 +95,10 @@ function renderStats() {
   const statRow = document.querySelector('[data-stats]');
   if (!statRow || !Array.isArray(SITE_DATA?.stats)) return;
   statRow.innerHTML = SITE_DATA.stats
-    .map((stat) => `<div class="stat"><div class="section-title">${stat.value}</div><div class="section-subtitle">${stat.label}</div></div>`)
+    .map((stat) => {
+      const valueMarkup = stat.value ? `<div class="section-title">${stat.value}</div>` : '';
+      return `<div class="stat">${valueMarkup}<div class="section-subtitle">${stat.label}</div></div>`;
+    })
     .join('');
 }
 
@@ -150,7 +153,7 @@ function renderProjects(limit) {
           <p class="card-desc">${project.description}</p>
           <div class="card-meta">${buildTags(project.tags)}</div>
           <div class="card-actions">
-            <a class="button secondary" href="${project.link}" target="_blank" rel="noopener">View case study</a>
+            <a class="button secondary" href="${project.link}" target="_blank" rel="noopener">${project.buttonText || 'View case study'}</a>
             <span class="tag">Project</span>
           </div>
         </article>
@@ -174,6 +177,25 @@ function renderNotes(limit) {
           <h3 class="card-title">${note.title}</h3>
           <p class="card-desc">${note.description}</p>
           <a class="button secondary" href="${note.link}" target="_blank" rel="noopener">Read</a>
+        </article>
+      `
+    )
+    .join('');
+}
+
+function renderMilestones() {
+  const list = document.querySelector('[data-milestones]');
+  if (!list || !Array.isArray(SITE_DATA?.milestones)) return;
+  list.innerHTML = SITE_DATA.milestones
+    .map(
+      (item) => `
+        <article class="list-item">
+          <div class="meta">
+            ${item.meta ? `<span>${item.meta}</span>` : ""}
+            <span class="tag">Milestone</span>
+          </div>
+          <h3 class="card-title">${item.title}</h3>
+          <a class="button secondary" href="${item.link}" target="_blank" rel="noopener">${item.linkLabel || 'Verify'}</a>
         </article>
       `
     )
@@ -241,6 +263,7 @@ function initPage(activePage) {
   renderProjects(activePage === 'home' ? 3 : undefined);
   renderNotes(activePage === 'home' ? 3 : undefined);
   renderHighlights();
+  renderMilestones();
   bindMailTos();
   bindBrandRefresh();
   setupScrollSpy();

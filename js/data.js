@@ -1,107 +1,109 @@
 const SITE_DATA = {
   links: {
     github: 'https://github.com/Karthikheyaa',
-    kaggle: 'https://www.kaggle.com/karthikheyaa',
+    linkedin: 'https://www.linkedin.com/in/karthikheyaa',
     email: 'mailto:karthikheyaa@gmail.com'
   },
   stats: [
-    { label: 'Years solving data problems', value: '5+' },
-    { label: 'Models in production', value: '18' },
-    { label: 'Mentored analysts', value: '12' },
-    { label: 'Datasets explored', value: '140+' }
+    { label: 'Years solving data problems', value: '3+' },
+    { label: 'Active projects', value: '3' },
+    { label: 'Mentored students', value: '60+' }
   ],
   skills: [
     {
-      title: 'Machine Learning & MLOps',
-      description: 'End-to-end lifecycle from feature design to monitoring with scikit-learn, TensorFlow, MLflow, and FastAPI.',
+      title: 'Pipelines (ETL/ELT)',
+      description: 'Build Python + SQL pipelines with orchestration and incremental loads. Batch-first; streaming when needed.',
       icon: '🤖'
     },
     {
-      title: 'Analytics & Storytelling',
-      description: 'Experiment design, cohorting, KPI design, and crisp data narratives through Notebooks, Tableau, and dashboards.',
+      title: 'Warehousing & modeling',
+      description: 'Design clean tables for analytics (facts/dims), handle joins/partitions, and keep schemas consistent.',
       icon: '📈'
     },
     {
-      title: 'Data Engineering',
-      description: 'Pipelines with Airflow and dbt, warehouse modeling, and dependable batch/stream ETL into Snowflake and BigQuery.',
+      title: 'Data quality & operations',
+      description: 'Validation checks, retries, backfills, and logging so jobs are debuggable and outputs are trustworthy.',
       icon: '🛠️'
     },
     {
-      title: 'Product Collaboration',
-      description: 'Partnering with PM, design, and engineering to translate ambiguous ideas into shipped experiments and features.',
+      title: 'SWE foundations',
+      description: 'Git/PRs, CI, Docker, and APIs when useful. I build maintainable, reproducible systems with clear docs.',
       icon: '🤝'
     }
   ],
   projects: [
     {
-      title: 'Dog Breed Image Classifier',
-      description: 'Fine-tuned EfficientNet on 120+ breeds, adding interpretability overlays and drift monitoring to keep deployments healthy.',
-      tags: ['Computer Vision', 'TensorFlow', 'MLOps'],
-      link: 'https://www.kaggle.com/code/karthikheyaa/dog-breed-classification',
-      image: 'images/Screenshot 2024-03-25 182452.png'
+      title: 'DE Batch Platform',
+      description: 'Batch data platform on AWS: ingestion → transformation → curated tables, with orchestration and quality checks.',
+      tags: ['Python', 'SQL', 'AWS', 'Airflow', 'ETL'],
+      link: 'https://github.com/Khey17/de-batch-platform',
+      image: 'images/projects/de-batch-platform.svg',
+      buttonText: 'View on GitHub'
     },
     {
-      title: 'Churn Early-Warning System',
-      description: 'Predicts churn risk weekly, surfaces drivers with SHAP, and triggers lifecycle journeys that cut churn by 14%.',
-      tags: ['Classification', 'SHAP', 'Product Analytics'],
-      link: '#',
-      image: 'images/data-services.png'
+      title: 'Sentinel Execution Layer',
+      description: 'Execution/orchestration layer for document/AI workflows with traceability, validation steps, and structured outputs.',
+      tags: ['Python', 'APIs', 'Orchestration', 'Observability'],
+      link: 'https://github.com/NSF-DARSE/sentinel-nextgenai-execution-layer',
+      image: 'images/projects/sentinel-execution-layer.svg',
+      buttonText: 'View on GitHub'
     },
     {
-      title: 'Pricing A/B Test Evaluator',
-      description: 'Reusable calculator that debugs experiments, checks power, and reports revenue lift with sequential testing controls.',
-      tags: ['Experimentation', 'Bayesian', 'Dashboards'],
-      link: '#',
-      image: 'images/money.png'
-    },
-    {
-      title: 'Data Quality Pulse',
-      description: 'Lightweight observability with freshness SLAs, schema alerts, and anomaly detection across the warehouse.',
-      tags: ['Data Engineering', 'Airflow', 'dbt'],
-      link: '#',
-      image: 'images/system.png'
+      title: 'Semilinear Elliptic PDEs (Research)',
+      description: 'Research codebase for numerical PDE solvers and experiments (spectral/HPS-style methods and learning-based components).',
+      tags: ['Research', 'Python', 'Scientific Computing', 'PDEs'],
+      link: 'https://github.com/Khey17/semilinear-elliptic-PDEs/tree/main',
+      image: 'public/assets/thumbnails/semilinear-arxiv.svg',
+      buttonText: 'View on GitHub'
     }
   ],
   notes: [
     {
-      title: 'Tuning image models without overfitting',
-      description: 'A hands-on look at regularization tricks and data augmentation patterns that keep convolutional nets honest.',
-      link: 'https://karthikheyaa-kurra.medium.com/tuning-image-models',
-      date: '2024-01-11'
+      title: 'Polars vs Pandas: what I’d use and why',
+      description: 'A practical comparison of Polars and Pandas for speed, memory, and workflow tradeoffs.',
+      link: 'https://medium.com/@karthikheyaa/polars-vs-pandas-5f44051f98bf',
+      date: '2025-01-01'
     },
     {
-      title: 'Making dashboards that people actually use',
-      description: 'Practical heuristics to avoid dashboard sprawl, plus a checklist for clean, legible analytics stories.',
-      link: '#',
-      date: '2023-10-01'
+      title: 'KNN Imputer explained (with intuition + usage)',
+      description: 'How KNN-based imputation works, when it helps, and the pitfalls to watch for.',
+      link: 'https://medium.com/@karthikheyaa/k-nearest-neighbor-knn-imputer-explained-1c56749d0dd7',
+      date: '2025-01-02'
     },
     {
-      title: 'Shipping ML like a product team',
-      description: 'Templates for planning, risk-checks, and postmortems when your models need to align with customer value.',
-      link: '#',
-      date: '2023-06-16'
+      title: 'Feature scaling techniques: when to use what',
+      description: 'Standardization vs normalization vs robust scaling — what changes and why it matters.',
+      link: 'https://medium.com/@karthikheyaa/techniques-of-feature-scaling-75a6aa6e9469',
+      date: '2025-01-03'
+    }
+  ],
+  milestones: [
+    {
+      title: 'AWS Certified Machine Learning Engineer – Associate',
+      meta: 'Issued: Dec 17, 2024 · Expires: Dec 17, 2027',
+      linkLabel: 'Verify',
+      link: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/3346c0ac44e14820974f92143c134a2d'
     },
     {
-      title: 'What I learned mentoring junior analysts',
-      description: 'Coaching patterns, feedback cadences, and pairing rituals that speed up early-career growth.',
-      link: '#',
-      date: '2023-02-07'
+      title: 'TensorFlow Developer Certificate',
+      linkLabel: 'Verify',
+      link: 'https://www.credential.net/d08b3cde-7418-4b92-b04f-8671caf0fa93'
     }
   ],
   highlights: [
     {
-      title: 'Reducing false positives in fraud',
-      summary: 'Partnered with trust & safety to retrain models with balanced costs, unlocking a 9% approval lift.',
+      title: 'Idempotent runs & backfills',
+      summary: 'Pipelines can rerun safely without duplicating data; backfills are planned and repeatable.',
       icon: '🛡️'
     },
     {
-      title: 'Building data culture',
-      summary: 'Introduced weekly readouts and playbooks that helped product squads adopt experiment-first thinking.',
+      title: 'Data quality checks',
+      summary: 'Schema + null/row-count sanity checks before writing curated tables.',
       icon: '📘'
     },
     {
-      title: 'Operationalizing monitoring',
-      summary: 'Rolled out drift/quality monitors with alerting to keep pipelines stable across deployments.',
+      title: 'Debuggability',
+      summary: 'Logs, run metadata, and clear failure paths so issues are traceable.',
       icon: '📡'
     }
   ]
