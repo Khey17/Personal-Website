@@ -183,6 +183,25 @@ function renderNotes(limit) {
     .join('');
 }
 
+function renderMilestones() {
+  const list = document.querySelector('[data-milestones]');
+  if (!list || !Array.isArray(SITE_DATA?.milestones)) return;
+  list.innerHTML = SITE_DATA.milestones
+    .map(
+      (item) => `
+        <article class="list-item">
+          <div class="meta">
+            ${item.meta ? `<span>${item.meta}</span>` : ""}
+            <span class="tag">Milestone</span>
+          </div>
+          <h3 class="card-title">${item.title}</h3>
+          <a class="button secondary" href="${item.link}" target="_blank" rel="noopener">${item.linkLabel || 'Verify'}</a>
+        </article>
+      `
+    )
+    .join('');
+}
+
 function bindMailTos() {
   const buttons = document.querySelectorAll('[data-email-link]');
   buttons.forEach((btn) => {
@@ -244,6 +263,7 @@ function initPage(activePage) {
   renderProjects(activePage === 'home' ? 3 : undefined);
   renderNotes(activePage === 'home' ? 3 : undefined);
   renderHighlights();
+  renderMilestones();
   bindMailTos();
   bindBrandRefresh();
   setupScrollSpy();
