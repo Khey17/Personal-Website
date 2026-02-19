@@ -53,7 +53,7 @@ const SITE_DATA = {
       description: 'Research codebase for numerical PDE solvers and experiments (spectral/HPS-style methods and learning-based components).',
       tags: ['Research', 'Python', 'Scientific Computing', 'PDEs'],
       link: 'https://github.com/Khey17/semilinear-elliptic-PDEs/tree/main',
-      image: 'public/assets/thumbnails/semilinear-arxiv.svg',
+      image: 'images/projects/semilinear-pdes.svg',
       buttonText: 'View on GitHub'
     }
   ],
@@ -75,19 +75,6 @@ const SITE_DATA = {
       description: 'Standardization vs normalization vs robust scaling — what changes and why it matters.',
       link: 'https://medium.com/@karthikheyaa/techniques-of-feature-scaling-75a6aa6e9469',
       date: '2025-01-03'
-    }
-  ],
-  milestones: [
-    {
-      title: 'AWS Certified Machine Learning Engineer – Associate',
-      meta: 'Issued: Dec 17, 2024 · Expires: Dec 17, 2027',
-      linkLabel: 'Verify',
-      link: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/3346c0ac44e14820974f92143c134a2d'
-    },
-    {
-      title: 'TensorFlow Developer Certificate',
-      linkLabel: 'Verify',
-      link: 'https://www.credential.net/d08b3cde-7418-4b92-b04f-8671caf0fa93'
     }
   ],
   highlights: [
