@@ -1,0 +1,11 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+<title id="t">DE Batch Platform icon</title><desc id="d">Pipeline icon for ETL project.</desc>
+<rect width="1200" height="800" fill="#0F172A"/>
+<rect x="120" y="300" width="220" height="160" rx="20" fill="#1D4ED8"/>
+<rect x="490" y="300" width="220" height="160" rx="20" fill="#2563EB"/>
+<rect x="860" y="300" width="220" height="160" rx="20" fill="#3B82F6"/>
+<path d="M340 380H490M710 380H860" stroke="#93C5FD" stroke-width="22" stroke-linecap="round"/>
+<path d="M470 350L510 380L470 410" fill="none" stroke="#93C5FD" stroke-width="14"/>
+<path d="M840 350L880 380L840 410" fill="none" stroke="#93C5FD" stroke-width="14"/>
+<text x="600" y="140" text-anchor="middle" font-size="54" font-family="Inter, Arial" fill="#E2E8F0">DE Batch Platform</text>
+</svg>
