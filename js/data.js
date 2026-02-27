@@ -59,6 +59,13 @@ const SITE_DATA = {
   ],
   notes: [
     {
+      title: 'Building a Batch Platform: what happens in what order (and why)',
+      description:
+        'A practical breakdown of a batch data platform workflow: ingestion → transforms → modeling → quality checks → observability.',
+      link: 'https://medium.com/@karthikheyaa/building-a-batch-platform-what-happens-in-what-order-and-why-636b9acf5d3b',
+      date: '2026-02-01'
+    },
+    {
       title: 'Polars vs Pandas: what I’d use and why',
       description: 'A practical comparison of Polars and Pandas for speed, memory, and workflow tradeoffs.',
       link: 'https://medium.com/@karthikheyaa/polars-vs-pandas-5f44051f98bf',
