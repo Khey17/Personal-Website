@@ -165,7 +165,8 @@ function renderProjects(limit) {
 function renderNotes(limit) {
   const list = document.querySelector('[data-notes]');
   if (!list || !Array.isArray(SITE_DATA?.notes)) return;
-  const items = limit ? SITE_DATA.notes.slice(0, limit) : SITE_DATA.notes;
+  const sortedNotes = [...SITE_DATA.notes].sort((a, b) => new Date(b.date) - new Date(a.date));
+  const items = limit ? sortedNotes.slice(0, limit) : sortedNotes;
   list.innerHTML = items
     .map(
       (note) => `
