@@ -1,6 +1,6 @@
 const SITE_DATA = {
   links: {
-    github: 'https://github.com/Karthikheyaa',
+    github: 'https://github.com/Khey17',
     linkedin: 'https://www.linkedin.com/in/karthikheyaa',
     email: 'mailto:karthikheyaa@gmail.com'
   },
